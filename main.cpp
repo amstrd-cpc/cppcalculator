@@ -1,17 +1,16 @@
-// C++ program to implement
-// the above approach
+// Calculator in C++ using basic OOP stuff 
 #include <iostream>
 #include <math.h>
 using namespace std;
 
 // Class calculator
+// Functional stuff go brrr
 class Calculator
 {
 float a, b, c, d, e, f, disc, x1, x2, realPart, imaginaryPart;
 public:
 
-	// Function to take input
-	// from user
+	// user types in sumthing
 	void result()
 	{
 		cout << "Enter First Number: ";
@@ -19,7 +18,7 @@ public:
 		cout << "Enter Second Number: ";
 		cin >> b;
 	}
-	
+	// different case for quadratics
 	void sqresult()
 	{
 		cout << "Enter X1: ";
@@ -30,25 +29,25 @@ public:
 		cin >> e;
 	}
 
-	// Function to add two numbers
+	// Addition
 	float add()
 	{
 		return a + b;
 	}
 
-	// Function to subtract two numbers
+	// Subtraction
 	float sub()
 	{
 		return a - b;
 	}
 
-	// Function to multiply two numbers
+	// Multiplication
 	float mul()
 	{
 		return a * b;
 	}
 
-	// Function to divide two numbers
+	// Division
 	float div()
 	{
 		if (b == 0)
@@ -62,6 +61,7 @@ public:
 			return a / b;
 		}
 	}
+	// quadratic equasion
 	float sqr()
 	{
 	disc = d*d - 4*c*e;
@@ -91,11 +91,11 @@ public:
 }
 };
 
-// Driver code
+// user actually does stuff with this
 int main()
 {
-	int ch;
-	Calculator c;
+	int ch; //user choise goes here
+	Calculator c; //define calculator class and create object c
 	cout << "Enter 1 to Add 2 Numbers" <<
 			"\nEnter 2 to Subtract 2 Numbers" <<
 			"\nEnter 3 to Multiply 2 Numbers" <<
@@ -111,7 +111,7 @@ int main()
 		{
 		case 1:
 			
-			// result function invoked
+			// using object c to invoke result
 			c.result();	
 			
 			// add function to calculate sum

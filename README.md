@@ -1,3 +1,3 @@
-# cpplogtest13
+# cppcalculator
 
 it's a calculator
